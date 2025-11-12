@@ -132,7 +132,7 @@ def main():
     ax.set_xticklabels(apps_labels, rotation=30, ha='right', fontsize=24)
     plt.subplots_adjust(bottom=0.25)  # Padding for rotated labels
     plt.yticks(fontsize=26)
-    plt.ylabel('Back-End Bound\n(% of Pipeline Slots)', fontsize=24)
+    plt.ylabel('Backend-bound stalled \n pipeline slots (%)', fontsize=24)
 
     # Set y-axis range with headroom
     y_max = max(values) + 5
