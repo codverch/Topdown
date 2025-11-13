@@ -100,9 +100,11 @@ def main():
 
     # === COMPACT BAR CHART: SLIMMER BARS + REDUCED SPACING ===
     backend_color = '#A72703'  # Purple color
-    bar_spacing = 0.1        # Reduced from 0.5 → tighter gaps
+    # Use a slightly smaller spacing but keep bars slim so they don't appear "fat".
+    # bar_spacing is the distance between bar centers; gap between bars = bar_spacing - width
+    bar_spacing = 0.04        # smaller spacing for tighter layout
     x = [i * bar_spacing for i in range(len(apps))]
-    width = 0.05             # Slimmer bars (was 0.35)
+    width = 0.02              # keep bars slim
 
     plt.figure(figsize=(16, 8))  # Reduced width for compact layout
 
